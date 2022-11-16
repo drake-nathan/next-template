@@ -4,6 +4,8 @@ import Head from 'next/head';
 import * as St from '../styles/App.styled';
 
 const Home: NextPage = () => {
+  const something = true;
+
   return (
     <St.AppContainer>
       <Head>
