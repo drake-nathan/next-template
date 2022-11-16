@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import Providers from 'contexts/Providers';
+import Providers from 'state/contexts/Providers';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const date = new Date();
@@ -9,7 +9,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Providers>
       <Component {...pageProps} />
-
     </Providers>
   );
 };
